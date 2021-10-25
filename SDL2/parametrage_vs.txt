@@ -1,0 +1,29 @@
+paramétrage visual studio
+
+propriétés projet (PAS de la solution!)
+
+	Débogage -> environnement :
+		PATH=%PATH%;$(ProjectDir).\SDL2\lib\x64 OU x86
+
+	VC++ Directories -> répertoires Include :
+	C/C++ -> général -> autres répertoires Includes
+		(Include path)
+		> include
+
+	VC++ Directories -> répertoires de bibliothèques :
+	Editeur de liens -> général -> répertoires de bibliothèques supplémentaires :
+		(Lib path)
+		> lib -> x64 OU x86 SELON PROJET
+
+	Editeur de liens -> entrée -> dépendances supplémentaires :
+		> .lib
+
+	Editeur de liens -> système
+		> Console(/SUBSYSTEM:CONSOLE)
+
+chemin relatif: prefixe $(ProjectDir)
+	xple: $(ProjectDir)./SDL2/include
+
+BUILD -> génération dossier Debug (x64 -> Debug) :
+	> coller .dll
+

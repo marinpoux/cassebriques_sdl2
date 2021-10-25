@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cassebriques_sdl2", "cassebriques_sdl2\cassebriques_sdl2.vcxproj", "{84A83271-5BB1-487B-BB92-BD757A7A73DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Debug|x64.ActiveCfg = Debug|x64
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Debug|x64.Build.0 = Debug|x64
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Debug|x86.Build.0 = Debug|Win32
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Release|x64.ActiveCfg = Release|x64
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Release|x64.Build.0 = Release|x64
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Release|x86.ActiveCfg = Release|Win32
+		{84A83271-5BB1-487B-BB92-BD757A7A73DA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5341A1FE-4FD0-42F2-98C7-4DA66915B7D3}
+	EndGlobalSection
+EndGlobal
