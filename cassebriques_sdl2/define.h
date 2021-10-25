@@ -75,53 +75,45 @@ typedef struct FPS_Manager {
 }FPS_Manager;
 
 
-//variables
-bool briques[LIGNES * COLONNES];
-
 
 //PROTOTYPE
 //initialisation
 void init(Window_Renderer& w_r, c_score& score_1,
-	c_pad& p_1, c_ball& ball, c_rect& brique,
+	c_pad& p_1, c_ball& ball,
 	FPS_Manager& fps, int&is_service, bool& is_running);
 void init_SDL(Window_Renderer& w_r);
 void init_pads(Window_Renderer& w_r, c_pad&p_1);
 void init_ball(Window_Renderer& w_r, c_ball& ball, c_pad&pad_1);
 void init_score(Window_Renderer& w_r, c_score& score_1);
-void init_briques(c_rect& brique);
 
 //event handler
 void event_handler(bool& is_running, int& is_service,
-	c_pad& p_1, c_ball& ball, c_rect& brique, c_score& score_1,
+	c_pad& p_1, c_ball& ball, c_score& score_1,
 	FPS_Manager& fps);
 
 void reset(c_score& score, int& is_service, c_pad& pad);
 
 void service(int& is_service, c_pad& p_1, c_ball& ball);
-//void reset_plateau(c_pad& p_1, c_ball& ball);
 
 void input(bool& is_running, c_pad& p_1, int&is_service);
 
 void collisions(c_pad& p_1, c_ball& ball,
-	c_score& score_1, c_rect& brique, int& is_service);
+	c_score& score_1, int& is_service);
 void collision_pad(c_pad& pad, c_ball& ball, int dir);
-void collision_brique(c_rect& brique, c_ball& ball, int n_i);
-
-void set_briques(c_rect& brique, int n_i);
 
 void fps_counter(FPS_Manager& fps);
 
 
 //update
 void update(Window_Renderer& w_r, c_score& score_1, 
-	c_ball& ball, c_pad& p_1, c_rect& brique, int&is_service);
+	c_ball& ball, c_pad& p_1, int&is_service);
 
 void deplace_pad(c_pad& pad);
 
 
 //render
 void render(Window_Renderer& w_r, FPS_Manager&fps, c_score& score_1,
-	c_ball& ball, c_rect& brique, c_pad& p_1);
+	c_ball& ball, c_pad& p_1);
 
 void synch(FPS_Manager&fps);
 

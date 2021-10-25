@@ -8,7 +8,7 @@
 #include "c_score.h"
 
 
-void collisions(c_pad& p_1, c_ball& ball, c_score& score_1, c_rect& brique,
+void collisions(c_pad& p_1, c_ball& ball, c_score& score_1,
 	int&is_service) {
 	//BUT	:détecter les collisions entres objets
 	//ENTREE:la raquette, la balle, le score, un booleen
@@ -19,18 +19,6 @@ void collisions(c_pad& p_1, c_ball& ball, c_score& score_1, c_rect& brique,
 
 		collision_pad(p_1, ball, -1);
 	}
-
-	//collisions balle - brique
-	bool reset_briques = true;
-	for (int n_i = 0; n_i < (LIGNES * COLONNES); n_i++) {
-		set_briques(brique, n_i);
-		collision_brique(brique, ball, n_i);
-
-		if (briques[n_i])
-			reset_briques = false;
-	}
-	if (reset_briques)
-		reset(score_1, is_service, p_1);
 
 	//rebondissement balle - bords
 	ball.bounce();
@@ -61,7 +49,7 @@ void collision_pad(c_pad& pad, c_ball& ball, int dir) {
 }
 
 
-void collision_brique(c_rect& brique, c_ball& ball, int n_i) {
+/*void collision_brique(c_rect& brique, c_ball& ball, int n_i) {
 
 	if (SDL_HasIntersection(ball.get_rect_p(), brique.get_rect_p()) && briques[n_i]) {
 
@@ -84,4 +72,4 @@ void collision_brique(c_rect& brique, c_ball& ball, int n_i) {
 			ball.set_rect_pos_y(ball.get_rect().y + 20);
 		}
 	}
-}
+}*/

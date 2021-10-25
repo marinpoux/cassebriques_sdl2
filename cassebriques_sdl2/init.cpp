@@ -7,7 +7,7 @@
 #include "c_pad.h"
 #include "c_score.h"
 
-void init(Window_Renderer&w_r, c_score&score_1, c_pad&p_1, c_ball&ball, c_rect&brique,
+void init(Window_Renderer&w_r, c_score&score_1, c_pad&p_1, c_ball&ball,
 	FPS_Manager&fps, int& is_service, bool&is_running) {
 	//BUT	: initialiser toutes les instances
 	//ENTREE: la fenetre, le rendu, le tableau des scores, la raquette, la balle,
@@ -23,8 +23,6 @@ void init(Window_Renderer&w_r, c_score&score_1, c_pad&p_1, c_ball&ball, c_rect&b
 	init_pads(w_r, p_1);
 
 	init_ball(w_r, ball, p_1);
-
-	init_briques(brique);
 
 	fps = { 0,0,0 };
 	//fps.last_time = 0;
@@ -131,18 +129,4 @@ void init_ball(Window_Renderer& w_r, c_ball& ball, c_pad& p_1) {
 	ball.set_y_i(p_1.get_y_i() -  2 * BALL_SIZE);
 
 	//velocité initialisée à la construction
-}
-
-
-void init_briques(c_rect& brique) {
-	brique.set_rect_dim((WIDTH - (SPC * COLONNES)) / COLONNES, 22);
-}
-
-
-void set_briques(c_rect& brique, int n_i) {
-	brique.set_rect_pos_x((((n_i % LIGNES) + 1) * SPC) + ((n_i % COLONNES) * brique.get_rect().w) - (SPC / 2));
-	brique.set_rect_pos_y(brique.get_rect().h * 3 + (((n_i % LIGNES) + 1) * SPC)
-		+ ((n_i % LIGNES) * brique.get_rect().h) - (SPC / 2));
-
-	brique.set_coul(255, 255, 255, 255);
 }

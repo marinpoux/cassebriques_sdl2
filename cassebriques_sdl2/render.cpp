@@ -8,7 +8,7 @@
 #include "c_score.h"
 
 void render(Window_Renderer& w_r, FPS_Manager&fps,
-	c_score&score_1, c_ball& ball, c_rect& brique, c_pad& p_1) {
+	c_score&score_1, c_ball& ball, c_pad& p_1) {
 	//BUT	:afficher le rendu
 	//ENTREE:la fenetre, le renderer, les fps, les scores, les raquettes, la balle
 	//SORTIE:/
@@ -25,14 +25,6 @@ void render(Window_Renderer& w_r, FPS_Manager&fps,
 
 	//scores
 	score_1.set_text_dim(w_r);
-
-	//briques
-	for (int n_i = 0; n_i < LIGNES * COLONNES; n_i++) {
-		if (briques[n_i]) {
-			set_briques(brique, n_i);
-			brique.fill_rect(w_r);
-		}
-	}
 
 	//fps constants
 	synch(fps);

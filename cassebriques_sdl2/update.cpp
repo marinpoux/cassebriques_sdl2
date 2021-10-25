@@ -7,7 +7,7 @@
 #include "c_pad.h"
 #include "c_score.h"
 
-void update(Window_Renderer& w_r, c_score& score_1, c_ball& ball, c_pad& p_1, c_rect& brique, int&is_service) {
+void update(Window_Renderer& w_r, c_score& score_1, c_ball& ball, c_pad& p_1, int&is_service) {
 	//BUT	:mettre à jour le jeu
 	//ENTREE:la fenetre, le rendu, les scores, la balle, les raquettes
 	//SORTIE:/

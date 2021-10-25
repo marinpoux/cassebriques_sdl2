@@ -28,13 +28,9 @@ C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_pad.h(90,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,39): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(53,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(59,34): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(60,28): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(72,42): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(76,42): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(80,42): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(84,42): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(41,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
+C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(47,34): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
+C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(48,28): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
   event_handler.cpp
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(108,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(109,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
@@ -82,9 +78,7 @@ C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_pad.h(90,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,39): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\init.cpp(109,24): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\init.cpp(143,96): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\init.cpp(145,44): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\init.cpp(107,24): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   input.cpp
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(108,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(109,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
@@ -223,16 +217,4 @@ C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\update.cpp(39,36): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\update.cpp(42,36): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   Génération de code en cours...
-c_rect.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-event_handler.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-fps_counter.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-init.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-input.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-main.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-quit.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-render.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-reset.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-service.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-synch.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-update.obj : error LNK2005: "bool * briques" (?briques@@3PA_NA) déjà défini(e) dans collisions.obj
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\x64\Debug\cassebriques_sdl2.exe : fatal error LNK1169: un ou plusieurs symboles définis à différentes reprises ont été rencontrés
+  cassebriques_sdl2.vcxproj -> C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\x64\Debug\cassebriques_sdl2.exe

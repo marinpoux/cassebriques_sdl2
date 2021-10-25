@@ -7,7 +7,7 @@
 #include "c_pad.h"
 #include "c_score.h"
 
-void event_handler(bool&is_running, int&is_service, c_pad& p_1,c_ball&ball, c_rect& brique,
+void event_handler(bool&is_running, int&is_service, c_pad& p_1,c_ball&ball,
 	c_score& score_1, FPS_Manager& fps) {
 	//BUT	:gestion des évenements (collisions, entrées clavier, service)
 	//ENTREE:3 booleens, les deux raquettes, la balle, les scores, les fps
@@ -24,7 +24,7 @@ void event_handler(bool&is_running, int&is_service, c_pad& p_1,c_ball&ball, c_re
 	input(is_running, p_1, is_service);
 
 	//collisions
-	collisions(p_1, ball, score_1, brique, is_service);
+	collisions(p_1, ball, score_1, is_service);
 
 	//compteur fps
 	fps_counter(fps);
