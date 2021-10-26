@@ -33,4 +33,33 @@ void input(bool&is_running, c_pad&p_1, int&is_service) {
 		p_1.set_controles(right);
 	else
 		p_1.set_controles(idle);
+
+
+	/*if (SDL_PollEvent(&e)) {
+
+		switch (e.type) {
+		case SDL_KEYDOWN:
+			switch (e.key.keysym.sym) {
+			case SDLK_LEFT:
+				p_1.set_controles(left);
+				break;
+			case SDLK_RIGHT:
+				p_1.set_controles(right);
+				break;
+			case (SDLK_SPACE):
+				if(is_service==1)
+					is_service = 2;
+				break;
+			case SDLK_ESCAPE:
+				is_running = false;
+				break;
+			default :
+				p_1.set_controles(idle);
+				break;
+			}
+		case SDL_KEYUP:
+			p_1.set_controles(idle);
+			break;
+		}
+	}*/
 }

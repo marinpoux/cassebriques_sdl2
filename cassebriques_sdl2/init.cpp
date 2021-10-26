@@ -147,14 +147,18 @@ void init_briques(c_brique briques[]) {
 
 	for (int n_i = 0; n_i < (LIGNES * COLONNES); n_i++) {
 
+		//dimensions
 		briques[n_i].set_rect_dim(hauteur, largeur);
 
+		//position
 		briques[n_i].set_rect_pos_x((((n_i % LIGNES) + 1) * SPC) + ((n_i % COLONNES) * largeur) - (SPC / 2));
 		briques[n_i].set_rect_pos_y(hauteur * 3 + (((n_i % LIGNES) + 1) * SPC)
 			+ ((n_i % LIGNES) * hauteur) - (SPC / 2));
 
+		//couleur
 		briques[n_i].set_coul(255, 255, 255, 255);
 
+		//etat
 		briques[n_i].set_actif(true);
 	}
 }

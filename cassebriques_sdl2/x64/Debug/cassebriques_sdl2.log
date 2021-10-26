@@ -1,4 +1,4 @@
-﻿  collisions.cpp
+﻿  input.cpp
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(108,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(109,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_rect.cpp(110,11): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
@@ -17,16 +17,4 @@ C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_pad.h(90,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,39): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_score.h(171,25): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_brique.h(48,72): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_brique.h(48,56): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_brique.h(48,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\c_brique.h(48,24): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(27,29): warning C4805: '==' : mélange risqué de type 'float' et de type 'bool' dans l'opération
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(52,17): warning C4244: 'initialisation' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(58,34): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(59,28): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(70,41): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(74,41): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(78,41): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\cassebriques_sdl2\collisions.cpp(82,41): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
   cassebriques_sdl2.vcxproj -> C:\Users\marin\Desktop\Cours\B\algo\exercices\cassebriques_sdl2\x64\Debug\cassebriques_sdl2.exe
