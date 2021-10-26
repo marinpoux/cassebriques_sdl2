@@ -6,12 +6,13 @@
 #include "c_ball.h"
 #include "c_pad.h"
 #include "c_score.h"
+#include "c_brique.h"
 
 
 void collisions(c_pad& p_1, c_ball& ball, c_score& score_1,
-	int&is_service) {
+	c_brique briques[], int&is_service, int&n_briques) {
 	//BUT	:détecter les collisions entres objets
-	//ENTREE:la raquette, la balle, le score, un booleen
+	//ENTREE:la raquette, la balle, le score, le tableau de briques, 2 entiers
 	//SORTIE:/
 
 	//collision balle - raquette
@@ -19,6 +20,16 @@ void collisions(c_pad& p_1, c_ball& ball, c_score& score_1,
 
 		collision_pad(p_1, ball, -1);
 	}
+
+	//collision balle - brique
+	for (int n_i = 0; n_i < (LIGNES * COLONNES); n_i++)
+
+		if (briques[n_i].get_actif() == true && SDL_HasIntersection(ball.get_rect_p(), briques[n_i].get_rect_p())) {
+
+			collision_brique(briques[n_i], ball);
+			n_briques--;
+		}
+
 
 	//rebondissement balle - bords
 	ball.bounce();
@@ -49,27 +60,27 @@ void collision_pad(c_pad& pad, c_ball& ball, int dir) {
 }
 
 
-/*void collision_brique(c_rect& brique, c_ball& ball, int n_i) {
+void collision_brique(c_brique& brique, c_ball& ball) {
+	//BUT	:gérer les collisions et rebonds de la balle avec les briques
+	//ENTREE:le tableau de briques, la balle
+	//SORTIE:/
 
-	if (SDL_HasIntersection(ball.get_rect_p(), brique.get_rect_p()) && briques[n_i]) {
-
-		briques[n_i] = false;
-
-		if (ball.get_rect().x >= brique.get_rect().x) {
-			ball.set_vel_x(-ball.get_vel_x());
-			ball.set_rect_pos_x(ball.get_rect().x - 20);
-		}
-		if (ball.get_rect().x <= brique.get_rect().x) {
-			ball.set_vel_x(-ball.get_vel_x());
-			ball.set_rect_pos_x(ball.get_rect().x + 20);
-		}
-		if (ball.get_rect().y >= brique.get_rect().y) {
-			ball.set_vel_y(-ball.get_vel_y());
-			ball.set_rect_pos_y(ball.get_rect().y - 20);
-		}
-		if (ball.get_rect().y >= brique.get_rect().y) {
-			ball.set_vel_y(-ball.get_vel_y());
-			ball.set_rect_pos_y(ball.get_rect().y + 20);
-		}
+	if (ball.get_rect().x >= brique.get_rect().x) {
+		ball.set_vel_x(-ball.get_vel_x());
+		ball.set_rect_pos_x(ball.get_rect().x - 20);
 	}
-}*/
+	if (ball.get_rect().x <= brique.get_rect().x) {
+		ball.set_vel_x(-ball.get_vel_x());
+		ball.set_rect_pos_x(ball.get_rect().x + 20);
+	}
+	if (ball.get_rect().y <= brique.get_rect().y) {
+		ball.set_vel_y(-ball.get_vel_y());
+		ball.set_rect_pos_y(ball.get_rect().y - 20);
+	}
+	if (ball.get_rect().y >= brique.get_rect().y) {
+		ball.set_vel_y(-ball.get_vel_y());
+		ball.set_rect_pos_y(ball.get_rect().y + 20);
+	}
+
+	brique.set_actif(false);
+}

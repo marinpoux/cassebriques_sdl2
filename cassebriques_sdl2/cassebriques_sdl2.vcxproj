@@ -160,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c_ball.h" />
+    <ClInclude Include="c_brique.h" />
     <ClInclude Include="c_pad.h" />
     <ClInclude Include="c_rect.h" />
     <ClInclude Include="c_score.h" />

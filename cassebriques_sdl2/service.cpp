@@ -10,7 +10,7 @@
 
 void service(int& is_service, c_pad& p_1, c_ball& ball) {
 	//BUT	:mettre en place le service
-	//ENTREE:2 booleens, les 2 raquettes, la balle
+	//ENTREE:1 entier, la raquette, la balle
 	//SORTIE:/
 
 	if (is_service == 1) {

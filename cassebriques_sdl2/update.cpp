@@ -9,7 +9,7 @@
 
 void update(Window_Renderer& w_r, c_score& score_1, c_ball& ball, c_pad& p_1, int&is_service) {
 	//BUT	:mettre à jour le jeu
-	//ENTREE:la fenetre, le rendu, les scores, la balle, les raquettes
+	//ENTREE:la fenetre, le rendu, le score, la balle, la raquette, un entier
 	//SORTIE:/
 
 	//màj texte score en fonction de valeur du score

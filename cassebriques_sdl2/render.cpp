@@ -6,11 +6,12 @@
 #include "c_ball.h"
 #include "c_pad.h"
 #include "c_score.h"
+#include "c_brique.h"
 
 void render(Window_Renderer& w_r, FPS_Manager&fps,
-	c_score&score_1, c_ball& ball, c_pad& p_1) {
+	c_score&score_1, c_ball& ball, c_pad& p_1, c_brique briques[]) {
 	//BUT	:afficher le rendu
-	//ENTREE:la fenetre, le renderer, les fps, les scores, les raquettes, la balle
+	//ENTREE:la fenetre, le renderer, les fps, le score, la raquette, la balle, le tableau de briques
 	//SORTIE:/
 	
 	//fond
@@ -25,6 +26,11 @@ void render(Window_Renderer& w_r, FPS_Manager&fps,
 
 	//scores
 	score_1.set_text_dim(w_r);
+
+	//briques
+	for (int n_i = 0; n_i < (LIGNES * COLONNES); n_i++)
+		if (briques[n_i].get_actif() == true)
+			briques[n_i].fill_rect(w_r);
 
 	//fps constants
 	synch(fps);

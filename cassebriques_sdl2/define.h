@@ -47,6 +47,7 @@ class c_rect;
 class c_pad;
 class c_ball;
 class c_score;
+class c_brique;
 
 //enum class Controles { up = 1, down, left, right, idle = 0 };
 
@@ -79,27 +80,30 @@ typedef struct FPS_Manager {
 //PROTOTYPE
 //initialisation
 void init(Window_Renderer& w_r, c_score& score_1,
-	c_pad& p_1, c_ball& ball,
-	FPS_Manager& fps, int&is_service, bool& is_running);
+	c_pad& p_1, c_ball& ball, c_brique briques[],
+	FPS_Manager& fps, int&is_service, bool& is_running, int&n_briques);
+
 void init_SDL(Window_Renderer& w_r);
 void init_pads(Window_Renderer& w_r, c_pad&p_1);
 void init_ball(Window_Renderer& w_r, c_ball& ball, c_pad&pad_1);
 void init_score(Window_Renderer& w_r, c_score& score_1);
+void init_briques(c_brique briques[]);
 
 //event handler
 void event_handler(bool& is_running, int& is_service,
-	c_pad& p_1, c_ball& ball, c_score& score_1,
-	FPS_Manager& fps);
+	c_pad& p_1, c_ball& ball, c_score& score_1, c_brique briques[],
+	int&n_briques, FPS_Manager& fps);
 
-void reset(c_score& score, int& is_service, c_pad& pad);
+void reset(c_score& score, int& is_service, c_pad& pad, int&n_briques, c_brique briques[]);
 
 void service(int& is_service, c_pad& p_1, c_ball& ball);
 
 void input(bool& is_running, c_pad& p_1, int&is_service);
 
-void collisions(c_pad& p_1, c_ball& ball,
-	c_score& score_1, int& is_service);
+void collisions(c_pad& p_1, c_ball& ball, c_score& score_1, 
+	c_brique briques[], int& is_service, int& n_briques);
 void collision_pad(c_pad& pad, c_ball& ball, int dir);
+void collision_brique(c_brique& brique, c_ball& ball);
 
 void fps_counter(FPS_Manager& fps);
 
@@ -113,13 +117,13 @@ void deplace_pad(c_pad& pad);
 
 //render
 void render(Window_Renderer& w_r, FPS_Manager&fps, c_score& score_1,
-	c_ball& ball, c_pad& p_1);
+	c_ball& ball, c_pad& p_1, c_brique briques[]);
 
 void synch(FPS_Manager&fps);
 
 
 //fermeture
-void quit(Window_Renderer& w_r, c_score score_1);
+void quit(Window_Renderer& w_r, c_score score_1, c_brique briques[]);
 
 //autres
 
